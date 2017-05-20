@@ -1,12 +1,11 @@
 var game; 
 
 window.onload = function () {
-    game = new Phaser.Game(640, 429, Phaser.AUTO, "phaser_game");
-    game.state.add("StateBoot", StateBoot);
-    game.state.add("StateLoad", StateLoad);
-    game.state.add("StateStart", StateStart);
-    game.state.add("StateMain", StateMain);
-    game.state.add("StateOver", StateOver);
-    game.state.add("StateWin", StateWin);
-    game.state.start("StateBoot");
+    game = new Phaser.Game(1024, 680, Phaser.AUTO, "phaser_game");
+    game.state.add("boot", stateBoot);
+    game.state.add("load", stateLoad);
+    game.state.add("start", stateStart);
+    game.state.start("boot");
+    
+
 };
