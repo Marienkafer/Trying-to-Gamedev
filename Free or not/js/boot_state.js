@@ -9,7 +9,7 @@ var stateBoot = {
     
      create: function () {
          
-         //Modificar resoluciones en dipositivos moviles y desktop
+         //Modify resolutions if desktop or movil app
          game.scale.pageAlignHorizontally = true;
          if(!game.device.desktop) {
              game.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
